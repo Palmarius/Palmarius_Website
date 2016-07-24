@@ -4,6 +4,7 @@
       <!--Import Google Icon Font-->
       <link rel="shortcut icon" href="favicon.png" />
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
       <!--Import materialize.css-->
       <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
@@ -12,6 +13,17 @@
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     </head>
+    <style>
+          .pal-bg{
+                background-image:url("testimonial-bg.jpg") !important;
+          }
+          .social-media{
+            color:#797979 !important;
+          }
+          .social-media:hover{
+              color:#000 !important;
+          }
+    </style>
 
     <body>
 
@@ -22,10 +34,10 @@
           <i class="large material-icons">list</i>
         </a>
         <ul> 
-          <li><a href="#info" class="btn-floating red tooltipped" data-position="top" data-delay="50" data-tooltip="About Us"><i class="material-icons">info</i></a></li>
-          <li><a href="#events" class="btn-floating yellow darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Events"><i class="material-icons">event</i></a></li>
-          <li><a href="#techtop" class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Techtop"><i class="material-icons">code</i></a></li>
-          <li><a href="#map" class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Map"><i class="material-icons">directions</i></a></li>
+          <li><a href="#info" rel="relativeanchor" class="btn-floating red tooltipped" data-position="top" data-delay="50" data-tooltip="About Us"><i class="material-icons">info</i></a></li>
+          <li><a href="#events" rel="relativeanchor" class="btn-floating yellow darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Events"><i class="material-icons">event</i></a></li>
+          <li><a href="#techtop1" rel="relativeanchor" class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Techtop"><i class="material-icons">code</i></a></li>
+          <li><a href="#map" rel="relativeanchor" class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Map"><i class="material-icons">directions</i></a></li>
         </ul>
         </div>
 
@@ -40,18 +52,19 @@
             <li><a href="" style="color:#616161;">Home</a></li>
             <li><a href="https://www.ieee.org/index.html" target="_blank" style="color:#616161;">IEEE</a></li>
             <li><a href="http://www.techtop.in/new" target="_blank" style="color:#616161;">Techtop</a></li>
-            <li><a href="" style="color:#616161;">Schedule</a></li>
-            <li><a href="" style="color:#616161;">Poster</a></li>
+            <li><a href="#events" rel="relativeanchor" style="color:#616161;">Events</a></li>
+            <li><a href="index.html" target="_blank" style="color:#616161;">Poster</a></li>
         </ul>
         <ul class="side-nav" id="mobile-demo">
         <li><img href="#" style="width: 90%;padding-left: 2rem;padding-top: 2rem;" src="img/palmarius.png" alt=""></li>
         <li><a href="" style="color:#616161;" class="waves-effect waves-teal">Home</a></li>
-        <li><a href="" style="color:#616161;" class="waves-effect waves-teal">IEEE</a></li>
-        <li><a href="" style="color:#616161;" class="waves-effect waves-teal">Techtop</a></li>
-        <li><a href="" style="color:#616161;" class="waves-effect waves-teal">Schedule</a></li>
-        <li><a href="" style="color:#616161;" class="waves-effect waves-teal">Poster</a></li>
+        <li><a href="https://www.ieee.org/index.html" target="_blank"  style="color:#616161;" class="waves-effect waves-teal">IEEE</a></li>
+        <li><a href="http://www.techtop.in/new" target="_blank"  style="color:#616161;" class="waves-effect waves-teal">Techtop</a></li>
+        <li><a href="#events" rel="relativeanchor" style="color:#616161;" class="waves-effect waves-teal">Events</a></li>
+        <li><a href="index.html" target="_blank" style="color:#616161;" class="waves-effect waves-teal">Poster</a></li>
       </ul>
         </div>
+        </nav>
         </div>
         <script>
           $( document ).ready(function(){
@@ -59,25 +72,15 @@
           });
         </script>
         
-        </nav>
+        
         <!--palmarius logo Bg-->
-        <div class="section" style="padding:0px 0px;background-image: linear-gradient(90deg, rgba(80, 196, 214, 0.9) 0%, rgba(82, 113, 209, 0.9) 100%);"> 
-          <center>
-            <img class="wow fadeIn" data-wow-duration="2s" data-wow-offset="2" src="img/logomain.png" style="width:45%;">
-          </center>
-        </div>
+         
+          <video class="section" muted="" loop autoplay class="fullscreen-bg__video" id="headervid" style="width:100%;padding:0px 0px;margin-bottom:-1rem;margin-top:-2rem;">
+                    <source src="img/palmarius new.mp4" onloadtype="video/mp4">
+            </video>
+        
         <!--palmarius logo Bg-->
-        <style>
-          .pal-bg{
-            background:#f5f5f5;
-          }
-          .social-media{
-            color:#797979 !important;
-          }
-          .social-media:hover{
-              color:#000 !important;
-          }
-        </style>
+
         <!--palmarius details-->
         <div id="info" class="section pal-bg">
           <div class="container" style="text-align:center;padding:2rem;">
@@ -85,10 +88,10 @@
             <p class="wow fadeInUp">Palmarius 2K16 is the National level Techfest hosted by Sahrdaya College of Engineering & Technology in connection with Techtop Innovation challenge.
                 TechTop is annually held to identify, promote and celebrate outstanding engineering talents with innovative ideas . Come and experience the joint effort of 6 departments; ECE, CSE,CE, EEE, BME, BTE of Sahrdaya College of Engineering & Technology; as we take you through a technical extravaganza with multi-discipline events all through 5th & 6th August 2016.</p>
             <div class="wow fadeInUp" data-wow-delay="0.5s" style="padding-top:3rem;padding-bottom:2rem;text-align:center;">
-            <a href="" class="social-media">&nbsp&nbsp&nbsp&nbspFacebook&nbsp&nbsp&nbsp&nbsp</a>
-            <a class="social-media" href="">&nbsp&nbsp&nbsp&nbspTwitter&nbsp&nbsp&nbsp&nbsp</a>
-            <a href="" class="social-media">&nbsp&nbsp&nbsp&nbspGoogle-Plus&nbsp&nbsp&nbsp&nbsp</a>
-            <a href="" class="social-media">&nbsp&nbsp&nbsp&nbspYouTube&nbsp&nbsp&nbsp&nbsp</a>
+            <a href="https://www.facebook.com/palmariusofficial" target="_blank" class="social-media">&nbsp&nbsp&nbsp&nbspFacebook&nbsp&nbsp&nbsp&nbsp</a>
+            <a class="social-media" href="https://twitter.com/palmariustech" target="_blank">&nbsp&nbsp&nbsp&nbspTwitter&nbsp&nbsp&nbsp&nbsp</a>
+            <a href="https://plus.google.com/u/0/109339797713439856139/posts" target="_blank" class="social-media">&nbsp&nbsp&nbsp&nbspGoogle-Plus&nbsp&nbsp&nbsp&nbsp</a>
+            <a href="https://www.youtube.com/channel/UCs5pAlrt2liK4WIVyXfAKpQ" target="_blank" class="social-media">&nbsp&nbsp&nbsp&nbspYouTube&nbsp&nbsp&nbsp&nbsp</a>
           </div>
         </div>
         </div>
@@ -115,7 +118,7 @@
               </center>
               <center class="col m6 s12">
                 <h3 class="flow-text animated fadeInRight" style="text-align:left;font-size:xx-large;">COMPUTER SCIENCE</h3>
-                <p  class="animated fadeInRight" style="text-align:left">The department of Computer Science is arranging a bunch of technical events including Codextreme, Webdoodle, and much more...</p>
+                <p  class="animated fadeInRight" style="text-align:left">The department of Computer Science & Engineering is arranging a bunch of technical events including Codextreme, Webdoodle, and much more...</p>
                 <button href="#modal1" style="float:left;background:#6698a4;" class="wow animated fadeInRight waves-effect waves-light btn modal-trigger">EVENTS</button>
               </center>
           </div>
@@ -128,7 +131,7 @@
               </center>
               <center class="col s12 m6">
                 <h3 class="flow-text animated fadeInRight" style="text-align:left;font-size:xx-large;">ELECRONICS & COMMUNICATIONS</h3>
-                <p  class="animated fadeInRight" style="text-align:left">The department of Computer Science is arranging a bunch of technical events including Codextreme, Webdoodle, and much more...</p>
+                <p  class="animated fadeInRight" style="text-align:left">The department of Electronics & Communication Engineering is arranging a bunch of technical events including Kurukshetra 3.0, Burn Out 3.0 and much more...</p>
                 <button href="#modal2" style="float:left;background:#6698a4;" class="animated fadeInRight waves-effect waves-light btn modal-trigger">EVENTS</button>
               </center>
           </div>
@@ -140,7 +143,7 @@
               </center>
               <center class="col s12 m6">
                 <h3 class="flow-text animated fadeInRight" style="text-align:left;font-size:xx-large;">CIVIL</h3>
-                <p  class="animated fadeInRight" style="text-align:left">The department of Computer Science is arranging a bunch of technical events including Codextreme, Webdoodle, and much more...</p>
+                <p  class="animated fadeInRight" style="text-align:left">The department of Civil Engineering is arranging a bunch of technical events including Survey Hunt, Cityscape and much more...</p>
                 <button href="#modal3" style="float:left;background:#6698a4;" class="animated fadeIn waves-effect waves-light btn modal-trigger">EVENTS</button>
               </center>
           </div>
@@ -152,7 +155,7 @@
               </center>
               <center class="col s6">
                 <h3 class="flow-text animated fadeInRight" style="text-align:left;font-size:xx-large;">ELECTRICAL & ELECTRONICS</h3>
-                <p  class="animated fadeInRight" style="text-align:left">The department of Computer Science is arranging a bunch of technical events including Codextreme, Webdoodle, and much more...</p>
+                <p  class="animated fadeInRight" style="text-align:left">The department of Electrical and Electronics Engineering is arranging a bunch of technical events including Electrocave, Chain Reaction and much more...</p>
                 <button href="#modal4" style="float:left;background:#6698a4;" class="animated fadeIn waves-effect waves-light btn modal-trigger">EVENTS</button>
               </center>
           </div>
@@ -164,7 +167,7 @@
               </center>
               <center class="col s12 m6">
                 <h3 class="flow-text animated fadeInRight" style="text-align:left;font-size:xx-large;">BIOMEDICAL</h3>
-                <p  class="animated fadeInRight" style="text-align:left">The department of Computer Science is arranging a bunch of technical events including Codextreme, Webdoodle, and much more...</p>
+                <p  class="animated fadeInRight" style="text-align:left">The department of Biomedical Engineering is arranging a bunch of technical events including Technocrat, Res Novea, and much more...</p>
                 <button href="#modal5" style="float:left;background:#6698a4;" class="animated fadeIn waves-effect waves-light btn modal-trigger">EVENTS</button>
               </center>
           </div>
@@ -176,7 +179,7 @@
               </center>
               <center class="col s12 m6">
                 <h3 class="flow-text animated fadeInRight" style="text-align:left;font-size:xx-large;">BIOTECHNOLOGY</h3>
-                <p  class="animated fadeInRight" style="text-align:left">The department of Computer Science is arranging a bunch of technical events including Codextreme, Webdoodle, and much more...</p>
+                <p  class="animated fadeInRight" style="text-align:left">The department of Biotechnology is arranging a bunch of technical events including Forensics, Indriya and much more...</p>
                 <button href="#modal6" style="float:left;background:#6698a4;" class="animated fadeIn waves-effect waves-light btn modal-trigger">EVENTS</button>
               </center>
           </div>
@@ -211,10 +214,10 @@
   <!-- Modal Structure CSE-->
   <div id="modal1" class="modal">
     <div class="modal-content">
-      <h4>CSE Events</h4>
+      <h4  style="font-weight:200;">CSE Events</h4>
       <ul class="collapsible" data-collapsible="accordion">
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>CODEXTREME</div>
+      <div class="collapsible-header"><i class="material-icons">code</i>CODEXTREME</div>
       <div class="collapsible-body">
           <p>Dust off your brains , Lets meet the Coder in you.<br><br>This is a programming contest, where the participant has to prove their problem solving skills.<br> A team can consist of a maximum of two members.</p>
                   
@@ -223,7 +226,7 @@
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>WEB DOODLE</div>
+      <div class="collapsible-header"><i class="material-icons">web</i>WEB DOODLE</div>
       <div class="collapsible-body">
           <p>A Mind of Creativity<br><br>Challenges are the web page creation, debugging and will test some specific HTML, CSS,
 
@@ -234,7 +237,7 @@
           </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>KHAZANE</div>
+      <div class="collapsible-header"><i class="material-icons">extension</i>KHAZANE</div>
       <div class="collapsible-body">
          <p>Rich the Treasure, Sweet the pleasure <br><br>This is an online treasure hunt. The participants has to solve various puzzles and problems in
 
@@ -245,7 +248,7 @@
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>HACK IT</div>
+      <div class="collapsible-header"><i class="material-icons">reorder</i>HACK IT</div>
       <div class="collapsible-body">
          <p>The art of Exploitation<br><br>This event will test the hacking skills of participants. Participants have to solve various levels
 
@@ -258,7 +261,7 @@
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>THUNDER BOLT</div>
+      <div class="collapsible-header"><i class="material-icons">redeem</i>THUNDER BOLT</div>
       <div class="collapsible-body">
          <p>The BEGINNING or The END?? Let the MYSTERY unfold..<br><br>
 
@@ -271,7 +274,7 @@
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>SAVISHKARA</div>
+      <div class="collapsible-header"><i class="material-icons">devices other</i>SAVISHKARA</div>
       <div class="collapsible-body">
          <p>Making an exhibition of any power or talent<br><br>This is a Software & Hardware Expo<br>A team can consist of a maximum of two members.</p>
                   
@@ -289,10 +292,10 @@
           <!-- Modal Structure ECE-->
   <div id="modal2" class="modal">
     <div class="modal-content">
-      <h4>ECE Events</h4>
+      <h4 style="font-weight:200;">ECE Events</h4>
       <ul class="collapsible" data-collapsible="accordion">
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>KURUKSHETRA 3.0</div>
+      <div class="collapsible-header"><i class="material-icons">gamepad</i>KURUKSHETRA 3.0</div>
       <div class="collapsible-body">
           <p>The Ultimate Battle of Robots.<br><br>Two machines are put to test in a special platform where they compete with specialty of
 
@@ -303,7 +306,7 @@ the platform and also each other. A team can consist of five members</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>Burnout</div>
+      <div class="collapsible-header"><i class="material-icons">track_changes</i>Burnout</div>
       <div class="collapsible-body">
           <p><br><br>Drive your robot through the specially designed track. Whoever completes the track in
 
@@ -314,7 +317,7 @@ minimum time wins. A team can consist of 3 members.</p>
           </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>LABRYNTH 3.0</div>
+      <div class="collapsible-header"><i class="material-icons">motorcycle</i>LABRYNTH 3.0</div>
       <div class="collapsible-body">
          <p>Adrenaline Rush Warfare <br>According to the theme of the labrynth the participants have to go through a series of stages
 
@@ -325,7 +328,7 @@ and reach the final stage in order to win. A team can consist of 3 members.</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>AMPHIBIAN</div>
+      <div class="collapsible-header"><i class="material-icons">videogame_asset</i>AMPHIBIAN</div>
       <div class="collapsible-body">
          <p><br><br>The participants have to create a robot that can travel in both terrain and aquatic surface
 
@@ -336,7 +339,7 @@ without damage and complete the track setup. A team can consist of 3 members.<br
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>Do or DIE</div>
+      <div class="collapsible-header"><i class="material-icons">bug_report</i>Do or DIE</div>
       <div class="collapsible-body">
          <p><br><br>
 
@@ -349,7 +352,7 @@ find the error and rectify it and complete the circuit.(circuit debugging)A team
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>FLASH</div>
+      <div class="collapsible-header"><i class="material-icons">apps</i>FLASH</div>
       <div class="collapsible-body">
          <p>Complete the given circuits in a given amount of time to win this electronic thriller.
 
@@ -369,10 +372,10 @@ A team consist of 2 members.</p>
         <!-- Modal Structure CEE-->
   <div id="modal3" class="modal">
     <div class="modal-content">
-      <h4>CE Events</h4>
+      <h4 style="font-weight:200;">CE Events</h4>
       <ul class="collapsible" data-collapsible="accordion">
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>SURVEY HUNT</div>
+      <div class="collapsible-header"><i class="material-icons">subject</i>SURVEY HUNT</div>
       <div class="collapsible-body">
           <p>May your angle be right and compass is true. It is about being the fastest and the shrewdest. The
 
@@ -389,7 +392,7 @@ members</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>CITYSCAPE</div>
+      <div class="collapsible-header"><i class="material-icons">location_city</i>CITYSCAPE</div>
       <div class="collapsible-body">
           <p>In cityscape you get to build your own city, with all the building units provided. Design the
 
@@ -404,7 +407,7 @@ A minimum of 3 maximum of 6 members per team</p>
           </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>TECHIE MINUTE</div>
+      <div class="collapsible-header"><i class="material-icons">mic</i>TECHIE MINUTE</div>
       <div class="collapsible-body">
          <p>If you think you are eloquent, this is the right platform for you. Take on the mic and speak
 
@@ -417,7 +420,7 @@ is restricted to English.<br> This is an individual event.</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>BUILD TO DESTROY</div>
+      <div class="collapsible-header"><i class="material-icons">build</i>BUILD TO DESTROY</div>
       <div class="collapsible-body">
          <p>Build your structure with the cans provided within 2 minutes and destroy the structure of
 
@@ -428,7 +431,7 @@ your opponent with a bouncing ball before they destroy yours.<br> This is a solo
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>JENGA</div>
+      <div class="collapsible-header"><i class="material-icons">timer</i>JENGA</div>
       <div class="collapsible-body">
          <p>Create a tower by arranging the wooden blocks provided in the given pattern. Take one
 
@@ -451,10 +454,10 @@ long wins.<br> This is an individual event.</p>
         <!-- Modal Structure EEE-->
   <div id="modal4" class="modal">
     <div class="modal-content">
-      <h4>EEE Events</h4>
+      <h4 style="font-weight:200;">EEE Events</h4>
       <ul class="collapsible" data-collapsible="accordion">
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>ELECTROCAVE</div>
+      <div class="collapsible-header"><i class="material-icons">timelapse</i>ELECTROCAVE</div>
       <div class="collapsible-body">
           <p>There is a cave at the end of which there is an electrical circuit puzzle. Solving it as fast as
 
@@ -467,7 +470,7 @@ A team can consist of a maximum of two members.</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>ELECTROGAME</div>
+      <div class="collapsible-header"><i class="material-icons">flash_on</i>ELECTROGAME</div>
       <div class="collapsible-body">
           <p>Think hard, scrabble your mind and fit into empty shells of dauntlessness, and dogma to aim
 
@@ -480,7 +483,7 @@ A team can consist of a maximum of two members.</p>
           </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>CHAIN REACTION</div>
+      <div class="collapsible-header"><i class="material-icons">timeline</i>CHAIN REACTION</div>
       <div class="collapsible-body">
          <p>Infuse your brains with the Sherlock genes to persuade the tormented clues which lead to
 
@@ -491,7 +494,7 @@ the snitch of glory.<br> A team can consist of 2-4 members.</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>TECHIE STORE</div>
+      <div class="collapsible-header"><i class="material-icons">store</i>TECHIE STORE</div>
       <div class="collapsible-body">
          <p>Mould your marketing sense and get ready to infiltrate into the fellow minds.
 
@@ -502,7 +505,7 @@ the snitch of glory.<br> A team can consist of 2-4 members.</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>ELECTRIC MAESTRO</div>
+      <div class="collapsible-header"><i class="material-icons">bubble_chart</i>ELECTRIC MAESTRO</div>
       <div class="collapsible-body">
          <p>Here is where you face multiple hurdles starting with simple electric circuits, dismantling
 
@@ -526,10 +529,10 @@ A team can consist of a minimum of two and a maximum of four members</p>
          <!-- Modal Structure BME-->
   <div id="modal5" class="modal">
     <div class="modal-content">
-      <h4>BME Events</h4>
+      <h4 style="font-weight:200;">BME Events</h4>
       <ul class="collapsible" data-collapsible="accordion">
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>TECHNOCRAT</div>
+      <div class="collapsible-header"><i class="material-icons">event</i>TECHNOCRAT</div>
       <div class="collapsible-body">
           <p>A unique way to express your thoughts and ideas.<br>The event includes Aptitude Test, Stress Interview, Coordination and creative skill test.
 
@@ -540,7 +543,7 @@ A team can consist of a minimum of two and a maximum of four members</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>BRAIN WAVES</div>
+      <div class="collapsible-header"><i class="material-icons">security</i>BRAIN WAVES</div>
       <div class="collapsible-body">
           <p>Solve your Life<br>This event includes Conflicting Topics and Problem Solving.
 
@@ -551,7 +554,7 @@ A team can consist of 2-3members.</p>
           </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>CROSS ROADS</div>
+      <div class="collapsible-header"><i class="material-icons">drive_eta</i>CROSS ROADS</div>
       <div class="collapsible-body">
          <p>Brush up your driving skills<br> Through knowledge of the particular system navigate robotic car through the path.<br>This is an Individual Event</p>
                   
@@ -560,7 +563,7 @@ A team can consist of 2-3members.</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>RES NOVEA</div>
+      <div class="collapsible-header"><i class="material-icons">graphic_eq</i>RES NOVEA</div>
       <div class="collapsible-body">
          <p>Know the Tech skills<br>The event consists of Technical games, Complex higher levels in Limited time frame.
 
@@ -571,7 +574,7 @@ A team can consist of 2-3members.</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>TECHNO VOLTS</div>
+      <div class="collapsible-header"><i class="material-icons">extension</i>TECHNO VOLTS</div>
       <div class="collapsible-body">
          <p>Build the Life<br>The event includes technical puzzle solving, moulding of biomedical equipments in Limited
 
@@ -584,7 +587,7 @@ A team can consist of two members.</p>
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>SPIRITUS VITEA 2k16</div>
+      <div class="collapsible-header"><i class="material-icons">explore</i>SPIRITUS VITEA 2k16</div>
       <div class="collapsible-body">
          <p>Explore the unexplored<br>The exhibition includes Exhibition of medical equipments and Equipments used in day to day Life.</p>
                   
@@ -603,10 +606,10 @@ A team can consist of two members.</p>
                  <!-- Modal Structure BTE-->
   <div id="modal6" class="modal">
     <div class="modal-content">
-      <h4>BTE Events</h4>
+      <h4 style="font-weight:200;">BTE Events</h4>
       <ul class="collapsible" data-collapsible="accordion">
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>FORENSICS</div>
+      <div class="collapsible-header"><i class="material-icons">colorize</i>FORENSICS</div>
       <div class="collapsible-body">
           <p>Nab the killer.<br>No crime is perfect and every crime scene obscures some element of evidence that heads
 
@@ -623,7 +626,7 @@ skills. Progress through a series of methodologies and identify the criminal.
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>INDRIYA</div>
+      <div class="collapsible-header"><i class="material-icons">remove_red_eye</i>INDRIYA</div>
       <div class="collapsible-body">
           <p>Challege your Senses.<br>Indriya takes you through a series of assessments fledged with ticklers, games and much
 
@@ -634,7 +637,7 @@ more surprises that really makes senses.<br>This is an individual event</p>
           </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>MAZE HUSTLE</div>
+      <div class="collapsible-header"><i class="material-icons">line_style</i>MAZE HUSTLE</div>
       <div class="collapsible-body">
          <p>Unravel the Engima<br>A confusing network of interconnected pathways and labrynth. Solve the tricky puzzles and
 
@@ -645,7 +648,7 @@ find your way out to grab prizes.<br> A team can consist of maximum of two membe
       </div>
     </li>
     <li>
-      <div class="collapsible-header"><i class="material-icons">list</i>TECHIE STORE</div>
+      <div class="collapsible-header"><i class="material-icons">store</i>TECHIE STORE</div>
       <div class="collapsible-body">
          <p>Solve the series of puzzles using simple logic and sequence solving and find out your way to
 
@@ -666,6 +669,59 @@ This is an individual event</p>
   </div>
 
         <!--modals--BTE>
+
+                 <!-- Modal Structure IEEE-->
+  <div id="modal7" class="modal">
+    <div class="modal-content">
+      <h4 style="font-weight:200;">IEEE Events</h4>
+      <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">perm_identity</i>AHASAS</div>
+      <div class="collapsible-body">
+          <p>The paper presentation contest<br>Realising Ideas through Paper Presentation.<br>A team consist of 4 members.</p>
+                  
+          
+          <p style="font-weight:500;">TOPIC : “Latest Trends in Engineering and Technology”<br>Registration fee : IEEE :Rs 250 &nbsp NON-IEEE: Rs 300<br>Date: August 6th 2016</p>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">print</i>ZERO TO INFINITY ON 3D PRINTING</div>
+      <div class="collapsible-body">
+          <p>Experience Live 3D printing workshop with us. Build your own models..<br>This is an individual event.</p>
+                  
+          
+          <p style="font-weight:500;">Registration fee : IEEE :Rs 400 &nbsp NON-IEEE: Rs 500<br>Date: August 5th 2016</p>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">group_add</i>IEEE TRIADS</div>
+      <div class="collapsible-body">
+          <p>Build the Basics<br>A team consist of 3 members.</p>
+                  
+          
+          <p style="font-weight:500;">TOPIC : “Latest Trends in Engineering and Technology”<br>Registration fee : IEEE :Rs 250 &nbsp NON-IEEE: Rs 300<br>Date: August 5th - 6th 2016</p>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">note</i>CALL FOR PAPERS</div>
+      <div class="collapsible-body">
+          <p>A team consist of 2 members.</p>
+                  
+          
+          <p style="font-weight:500;">TOPIC : ADVANCING TECHNOLOGY FOR HUMANITY<br>Registration fee : IEEE :Rs 150 &nbsp NON-IEEE: Rs 200<br>Date: August 5th 2016</p>
+      </div>
+    </li>
+    
+    
+    
+    
+  </ul>
+    </div>
+    
+  </div>
+
+        <!--modals--IEEE>
+
 
         <!--IEEE-->
         <style>
@@ -690,12 +746,12 @@ This is an individual event</p>
           }
         </style>
 
-        <div id="techtop" class="section">
+        <div id="techtop1" class="section pal-bg">
           <div class="container row" style="padding:0rem;">
               <center class="col s12 m6" style="padding-top:3rem;">
-                <a href="http://techtop.in/new/?page_id=15" target="_blank"><img  href="http://techtop.in/new/" target="_blank" itemtype="button" class="wow fadeInLeft" src="img/slider2.jpg" alt=""></a>
+                <a href="http://techtop.in/new/?page_id=15" target="_blank"><img  href="http://techtop.in/new/" target="_blank" itemtype="button" class="wow fadeInLeft" src="img/slider2n.png" alt=""></a>
               </center>
-              <div  class="wow fadeInRight col s12 m6" style="padding-top: 3rem;padding-left: 8rem;">
+              <div  class="wow fadeInRight col s12 m6" style="padding-top: 3rem;">
                 <h5 style="text-align: left;">TechTop National Innovation Challenge</h5>
                 <p style="text-align: left;">TechTop National Innovation Challenge is annually held to identify, promote and celebrate outstanding engineering talents with innovative ideas that can be demonstrated and commercialized and push them more to unleash their potential in entrepreneurship.</p>
                 <a href="http://techtop.in/new/?page_id=15" target="_blank"><button style="float:left;color:#fff;" class="wow fadeInUp animated fadeIn waves-effect waves-light btn">Know More</button><a>
@@ -710,7 +766,7 @@ This is an individual event</p>
             <div class="col s12">
                 <p class="wow fadeInUp" data-wow-iteration="1" style="text-align:center;color:#fff;font-weight:300;letter-spacing:1px;">The IEEE Chapter in our college has arranged a bunch of events like Paper Presentation, Talks, and much more.</p>
                 <center style="padding-top:1rem;">
-                <a  href="https://www.ieee.org/index.html" target="_blank" ><button type="submit" style="float:center;color:#fff;" class="wow fadeInUp my-button animated fadeIn btn-flat">EVENTS</button></a>
+                <button href="#modal7" type="submit" style="float:center;color:#fff;" class="wow fadeInUp my-button animated fadeIn btn-flat modal-trigger">EVENTS</button>
                 </center>
             </div>
           </div>
@@ -749,25 +805,31 @@ This is an individual event</p>
         <!--Contact us-->
 
         <div class="section" style="background:#37474f;">
-          <div class="container row">
+          <div class="row">
             
-              <h3 class="wow bounceIn" data-wow-iteration="1" style="color:#eaeaea;font-weight:300;text-align:center;padding-top:1rem;padding-bottom:1rem;">CONTACT US</h3>
-              <div class="col s12 m4" style="text-align:center;">
-                  <h5 class="wow fadeInUp" style="color:#eaeaea;font-weight:300;">Faculty Convener</h5>
-                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;" class="material-icons" style="vertical-align:top;">perm_identity</i>&nbsp Shini S</div>
-                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;" class="material-icons" style="vertical-align:top;">call</i>&nbsp+91 - 9895117505</div>
+              <h3 class="wow bounceIn" data-wow-iteration="1" style="color:#eaeaea;font-weight:300;text-align:center;padding-top:2rem;padding-bottom:1rem;">CONTACT US</h3>
+              <div  class="" style="padding-top:1rem;padding-bottom:1rem;">
+              <div class="col s12 m3" style="text-align:center;">
+                  <h5 class="wow fadeInUp" style="color:#eaeaea;font-weight:300;padding-bottom:1rem">Faculty Convener</h5>
+                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;vertical-align:top;" class="material-icons" >perm_identity</i>&nbsp Shini S</div>
+                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;vertical-align:top;" class="material-icons" >call</i>&nbsp+91 - 9895117505</div>
               </div>
-              <div class="col s12 m4" style="text-align:center;border-left:1px solid #455a64;border-right:1px solid #455a64;">
-                  <h5 class="wow fadeInUp" style="color:#eaeaea;font-weight:300;">Student Convener</h5>
-                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;" class="material-icons" style="vertical-align:top;">perm_identity</i>&nbsp Abhijith B</div>
-                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;" class="material-icons" style="vertical-align:top;">call</i>&nbsp+91 - 9061226486</div>
+              <div class="col s12 m3" style="text-align:center;border-left:1px solid #455a64;border-right:1px solid #455a64;">
+                  <h5 class="wow fadeInUp" style="color:#eaeaea;font-weight:300;padding-bottom:1rem">Student Convener</h5>
+                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;vertical-align:top;" class="material-icons" >perm_identity</i>&nbsp Abhijith B</div>
+                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;vertical-align:top;" class="material-icons" >call</i>&nbsp+91 - 9061226486</div>
               </div>
-              <div class="col s12 m4" style="text-align:center;">
-                  <h5 class="wow fadeInUp" style="color:#eaeaea;font-weight:300;">E - Mail</h5>
-                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;" class="material-icons" style="vertical-align:top;">email</i>&nbspinfo@palmarius.tech</div>
+              <div class="col s12 m3" style="text-align:center;border-left:1px solid #455a64;border-right:1px solid #455a64;">
+                  <h5 class="wow fadeInUp" style="color:#eaeaea;font-weight:300;padding-bottom:1rem">Publicity Convener</h5>
+                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;vertical-align:top;" class="material-icons" >perm_identity</i>&nbsp Neeraj M G</div>
+                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;vertical-align:top;" class="material-icons" >call</i>&nbsp+91 - 8129955899</div>
+              </div>
+              <div class="col s12 m3" style="text-align:center;">
+                  <h5 class="wow fadeInUp" style="color:#eaeaea;font-weight:300;padding-bottom:1rem">E - Mail</h5>
+                  <div class="wow fadeInUp" style="color:#eaeaea;"><i style="color:#eaeaea;vertical-align:top;" class="material-icons" >email</i>&nbspinfo@palmarius.tech</div>
                   
               </div>
-              
+              </div>
           </div>
         </div>
 
@@ -789,6 +851,16 @@ This is an individual event</p>
       <script src="js/wow.js"></script>
       <script>
         new WOW().init();
+      </script>
+      <script>
+        $(document).ready(function() {
+        $('a[rel="relativeanchor"]').click(function(){
+            $('html, body').animate({
+                scrollTop: $( $.attr(this, 'href') ).offset().top
+            }, 500);
+            return false;
+        }); 
+        });
       </script>
     </body>
   </html>
